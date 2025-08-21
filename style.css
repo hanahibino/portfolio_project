@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
-img {
+.profile-pic {
     max-width: 30%;
     float: right;
     align-content: right;
@@ -19,8 +19,8 @@ img {
     height: auto;
 }
 header {
-    padding: 1rem 0 1rem;
-    display: flex;
+    padding: 1rem 0;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -28,12 +28,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 0;
     max-width: 1000px;
     margin: 0 auto;
 }
 .location {
-    margin: 0 1rem 0 0;
+    margin: 0 0 0 10px;
     font-weight: 500;
     color: black;
     font-size: medium;
@@ -56,6 +55,7 @@ header {
     text-align: center;
     display: flexbox;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0 16px;
     border-bottom: 2px solid;
     border-bottom-color: black;
@@ -63,7 +63,7 @@ header {
 .nav-bar a {
     color: white;
     text-decoration: none;
-    padding: 0 5rem; 
+    padding: 0 2rem; 
     font-family: "Inter", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
@@ -87,6 +87,7 @@ h1 {
     font-size: xxx-large;
     color: black;
     padding: .25rem 0 .5rem;
+    max-width: 1000px;
 }
 .last-name {
     margin: 0 0 0 10px;
@@ -98,6 +99,7 @@ h1 {
     font-size: xx-large;
     color: black;
     padding: .25rem 0 .5rem;
+    max-width: 1000px;
 }
 h2 {
     font-size: large;
@@ -143,23 +145,33 @@ h3 {
 }
 .project {
     display: flex;
-    gap: 5px;
-    align-items: center;
-    margin-bottom: 2rem;
+    gap: 1px;
+    align-items: flex-start;
+    margin: 1.25rem;
 }
 .project-body {
-    gap: 15px;
-    text-align: left;
     display: flex;
+    flex-direction: column;
     flex: 1;
+    gap: 0.5px;
+    text-align: left;
 }
 .project img {
     max-width: 300px;
-    margin-right: 20px;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0;
     padding: 1;
     border: 0;
 }
-
+.project a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.project a:hover {
+    color: white;
+}
 footer {
     border-top: 1px solid;
     text-align: center;
