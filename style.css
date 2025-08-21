@@ -8,20 +8,33 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 16px;
+}
+img {
+    max-width: 30%;
+    float: right;
+    align-content: right;
+    display: flex;
+    padding: 10px;
+    height: auto;
 }
 header {
     padding: 1rem 0 1rem;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .bar {
     display: block;
-    align-items: right;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 0 0 0 10px;
     max-width: 1000px;
     margin: 0 auto;
 }
 .location {
     margin: 0 1rem 0 0;
+    font-weight: 500;
     color: black;
     font-size: medium;
     text-align: right;
@@ -102,14 +115,6 @@ h2 {
     color: black;
     text-align: left;
 }
-img {
-    max-width: 30%;
-    float: right;
-    align-content: right;
-    display: flex;
-    padding: 10px;
-    height: auto;
-}
 .clearfix {
     clear: both;
 }
@@ -121,12 +126,12 @@ img {
 }
 h3 {
     font-size: medium;
-    line-height: .5;
+    line-height: 1.2;
     margin: 0;
 }
 .grad-date {
     font-size: small;
-    line-height: .01;
+    line-height: 1.2;
     margin: .1;
 }
 .grad-institution {
